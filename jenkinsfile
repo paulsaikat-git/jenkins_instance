@@ -6,6 +6,9 @@ pipeline{
     sh 'ant -f build.xml -v'
     }
     }
+    stage('test'){
+    sh 'echo "Testing Stage"'
+    }
     }
     post {
    	 always{
